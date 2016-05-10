@@ -1,5 +1,7 @@
-/log/
-/chef-repo2/
-/chef-repo2/
 /.buildpath
 /.project
+/.settings/
+/chef-repo/cookbooks/
+/chef-repo/nodes/
+/.vagrant/
+/DocumentRoot/

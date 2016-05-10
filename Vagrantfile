@@ -12,7 +12,7 @@ Vagrant.configure(2) do |config|
     chef.nodes_path = "./chef-repo/nodes"  # https://github.com/mitchellh/vagrant/issues/6862
     # chef.roles_path = "./chef-repo/roles"
     chef.add_recipe "netcommons"
-
-    node.vm.synced_folder './NetCommons3', '/var/www/html/NetCommons3'
   end
+
+  config.vm.synced_folder './DocumentRoot', '/var/www/html'
 end

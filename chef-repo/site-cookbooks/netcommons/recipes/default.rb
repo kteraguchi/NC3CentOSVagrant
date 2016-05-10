@@ -53,8 +53,9 @@ composer_project "#{node['apache']['docroot_dir']}/NetCommons3" do
 end
 
 execute "bower_install" do
-  command "bower install --allow-root"
+  command "bower install"
   cwd "#{node['apache']['docroot_dir']}/NetCommons3"
   user 'vagrant'
   group 'vagrant'
+  environment ({'HOME' => '/home/vagrant'})
 end

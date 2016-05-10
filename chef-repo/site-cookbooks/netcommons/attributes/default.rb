@@ -10,7 +10,9 @@ default['locale']['lang'] = 'ja_JP.UTF-8'
 default['locale']['lc_all'] = 'ja_JP.UTF-8'
 
 default['apache']['user'] = 'vagrant'
+default['apache']['group'] = 'vagrant'
 
+default['php']['directives'] = {"date.timezone" => "Asia/Tokyo"}
 default['php']['packages'] = [
   'php',
   'php-devel',

@@ -1,0 +1,6 @@
+source 'https://supermarket.chef.io'
+
+metadata
+
+# https://github.com/hw-cookbooks/locale/pull/16
+cookbook 'locale', git: 'https://github.com/fatz/locale.git', branch: 'bug/centos7'
